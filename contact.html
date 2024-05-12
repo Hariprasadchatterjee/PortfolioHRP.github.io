@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" class="css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+
+    <header class="header ">
+        <img src="./Images/bbdLogo.jpg" alt="logoPic" class="logo">
+        <nav>
+            <ul class="navbarUl">
+                <li class="navbar_link home_link"><a href="index.html">Home</a></li>
+                <li class="navbar_link about_link"><a href="about.html">About</a></li>
+                <li class="navbar_link contact_link"><a href="contact.html">Contact</a></li>
+                <li class="navbar_link services_link"><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <div class="mobile_nav_btn" onclick="myfun()">
+            <ion-icon name="menu-outline" class="mobile_nav_icon" ></ion-icon>
+            <ion-icon name="close-outline" class="mobile_nav_icon"></ion-icon>
+        </div>
+    </header>
+
+    <div class="mapCenter">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14774.792626124103!2d88.38103390463095!3d22.213574539842927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a024210a4df2847%3A0x5c7ce899303b4fee!2sTaldi%2C%20West%20Bengal%20743355!5e0!3m2!1sen!2sin!4v1715521698175!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <section class="section contact_sec">
+        <div class="container">
+            <div class="work_data">
+                <h2 class="work_head">Contact Us</h2>   
+            </div>
+            <div class="contact_data">
+                <form action="#">
+                    <div class="grid grid-two-columns">
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="text" name="email" id="email" placeholder="Email">
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <label for="subject"></label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <label for="Message"></label>
+                        <textarea  cols="30" rows="10" name="Message" id="Message" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="section footer_sec">
+        <div class="container grid grid-four-columns footer_Div">
+            <div class="fa_about">
+                <h3>About</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Ad incidunt et vitae cum voluptate pariatur dolor.
+                      Tempora, ea nulla ipsam, labore, nihil inventore 
+                      animi minus quasi cumque fugiat tempore optio.
+                </p>
+            </div>
+            <div class="fa_links">
+                <h3>Links</h3>
+                <ul>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Home</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">About</a>
+                    </li>
+                    <li>
+                       <span> <ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Service</a>
+                    </li>
+                    <li>
+                      <span> <ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">portfolio</a>
+                    </li>
+                    <li>
+                       <span> <ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="fa_services">
+                <h3>Services</h3>
+                <ul>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Web design</a>
+
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Web development</a>
+
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Mini Projects</a>
+
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Online Classes</a>
+
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Youtube courses</a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="fa_address">
+                <h3>Have a Questions? </h3>
+                <address>
+                    <div>
+                        <p>
+                            <span>
+                                <ion-icon name="location-outline"></ion-icon>
+                               
+                            </span>
+                            Taldi, India
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>
+                                <ion-icon name="call-outline"></ion-icon>
+                              
+                            </span>
+                            <a href="tel:+916297251905">+91 6297251905</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>
+                                <ion-icon name="mail-outline"></ion-icon>
+                               
+                            </span>
+                            <a href="mailto:chatterjeeharsha101@gmail.com">chatterjeeharsha101@gmail.com</a>
+                        </p>
+                    </div>
+            
+                </address>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer_social__icons section">
+                <a href="" target="_blank">
+                    <ion-icon class="icons" name="logo-instagram"></ion-icon>
+                </a>
+                <a href="" target="_blank">
+                    <ion-icon class="icons" name="logo-discord"></ion-icon>
+                </a>
+                <a href="" target="_blank">
+                    <ion-icon class="icons" name="logo-youtube"></ion-icon>
+                </a>
+
+            </div>
+
+            <div class="f_credits">
+            <p>copyright &copy;2024 All rights reserved | This template is made with ❤
+                by H.P Chatterjee
+            </p>
+            </div>
+        </div>
+       
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
